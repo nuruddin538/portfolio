@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-bazar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="emerald-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="amber-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow-bazar" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bg-bazar)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <circle cx="1050" cy="120" r="180" fill="#10b981" fill-opacity="0.08" />
+  <circle cx="150" cy="550" r="220" fill="#059669" fill-opacity="0.06" />
+
+  <!-- App Header / Nav -->
+  <rect x="60" y="40" width="1080" height="70" rx="16" fill="#0f172a" fill-opacity="0.9" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="90" y="58" width="34" height="34" rx="8" fill="url(#emerald-glow)" />
+  <text x="135" y="80" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">BazarDor</text>
+  <text x="240" y="80" fill="#10b981" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">বাজারদর — Daily Grocery Tracker</text>
+  
+  <!-- Search Bar -->
+  <rect x="520" y="55" width="340" height="40" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="545" y="80" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">পণ্য খুঁজুন (e.g. চাল, ডাল, আলু, তেল)...</text>
+  
+  <!-- Auth Button -->
+  <rect x="980" y="55" width="130" height="40" rx="10" fill="url(#emerald-glow)" />
+  <text x="1015" y="80" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Better Auth</text>
+
+  <!-- Hero Banner inside app -->
+  <rect x="60" y="130" width="1080" height="110" rx="16" fill="#042f2e" stroke="#115e59" stroke-width="1" />
+  <text x="100" y="172" fill="#ecfdf5" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="800">নিত্যপ্রয়োজনীয় পণ্যের বাজারদর পর্যবেক্ষণ ও তুলনা</text>
+  <text x="100" y="205" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="14">Built with Next.js App Router, TypeScript, Tailwind CSS &amp; Better Auth</text>
+  
+  <!-- Badge: Live Status -->
+  <rect x="920" y="165" width="180" height="40" rx="20" fill="#065f46" stroke="#34d399" stroke-width="1"/>
+  <circle cx="945" cy="185" r="5" fill="#34d399"/>
+  <text x="965" y="190" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Updated Today</text>
+
+  <!-- Product Cards Grid -->
+  <!-- Card 1: Rice -->
+  <g transform="translate(60, 260)" filter="url(#shadow-bazar)">
+    <rect width="250" height="355" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="150" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="90" r="42" fill="#047857" fill-opacity="0.3"/>
+    <text x="125" y="98" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="34" text-anchor="middle">🌾</text>
+    <rect x="25" y="25" width="70" height="22" rx="6" fill="#065f46"/>
+    <text x="60" y="40" fill="#a7f3d0" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">চাল / খাদ্যশস্য</text>
+    
+    <text x="20" y="195" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">মিনিকেট চাল (Miniket)</text>
+    <text x="20" y="220" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">বাজার: চট্টগ্রাম পাইকারি ও খুচরা</text>
+    
+    <text x="20" y="260" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">৳ ৬৮ <tspan font-size="13" fill="#94a3b8">/কেজি</tspan></text>
+    <rect x="20" y="280" width="80" height="20" rx="4" fill="#064e3b" />
+    <text x="28" y="294" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11">▼ -২.৫% হ্রাস</text>
+    
+    <rect x="20" y="312" width="210" height="30" rx="8" fill="url(#emerald-glow)"/>
+    <text x="125" y="332" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">দরের বিস্তারিত দেখুন</text>
+  </g>
+
+  <!-- Card 2: Soybean Oil -->
+  <g transform="translate(335, 260)" filter="url(#shadow-bazar)">
+    <rect width="250" height="355" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="150" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="90" r="42" fill="#d97706" fill-opacity="0.3"/>
+    <text x="125" y="98" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="34" text-anchor="middle">🌻</text>
+    <rect x="25" y="25" width="70" height="22" rx="6" fill="#78350f"/>
+    <text x="60" y="40" fill="#fde68a" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">ভোজ্য তেল</text>
+
+    <text x="20" y="195" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">সয়াবিন তেল (Soybean)</text>
+    <text x="20" y="220" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">ব্র্যান্ড: ফ্রেশ / তীর / রূপচাঁদা</text>
+
+    <text x="20" y="260" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">৳ ১৬৫ <tspan font-size="13" fill="#94a3b8">/লিটার</tspan></text>
+    <rect x="20" y="280" width="85" height="20" rx="4" fill="#451a03" />
+    <text x="28" y="294" fill="#fcd34d" font-family="system-ui, -apple-system, sans-serif" font-size="11">● অপরিবর্তিত</text>
+
+    <rect x="20" y="312" width="210" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="125" y="332" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">দরের বিস্তারিত দেখুন</text>
+  </g>
+
+  <!-- Card 3: Onion -->
+  <g transform="translate(610, 260)" filter="url(#shadow-bazar)">
+    <rect width="250" height="355" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="150" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="90" r="42" fill="#dc2626" fill-opacity="0.25"/>
+    <text x="125" y="98" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-size="34" text-anchor="middle">🧅</text>
+    <rect x="25" y="25" width="70" height="22" rx="6" fill="#7f1d1d"/>
+    <text x="60" y="40" fill="#fecaca" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">মসলা ও সবজি</text>
+
+    <text x="20" y="195" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">দেশি পেঁয়াজ (Onion)</text>
+    <text x="20" y="220" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">উৎস: পাবনা ও ফরিদপুর বাজার</text>
+
+    <text x="20" y="260" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">৳ ৫৫ <tspan font-size="13" fill="#94a3b8">/কেজি</tspan></text>
+    <rect x="20" y="280" width="80" height="20" rx="4" fill="#064e3b" />
+    <text x="28" y="294" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11">▼ -৫.০% হ্রাস</text>
+
+    <rect x="20" y="312" width="210" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="125" y="332" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">দরের বিস্তারিত দেখুন</text>
+  </g>
+
+  <!-- Card 4: Lentils (ডাল) -->
+  <g transform="translate(885, 260)" filter="url(#shadow-bazar)">
+    <rect width="250" height="355" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="150" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="90" r="42" fill="#0284c7" fill-opacity="0.3"/>
+    <text x="125" y="98" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="34" text-anchor="middle">🥣</text>
+    <rect x="25" y="25" width="70" height="22" rx="6" fill="#0c4a6e"/>
+    <text x="60" y="40" fill="#bae6fd" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">ডাল ও ডালজাত</text>
+
+    <text x="20" y="195" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">দেশি মসুর ডাল (Red Lentil)</text>
+    <text x="20" y="220" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">গ্রেড: প্রিমিয়াম দানাদার</text>
+
+    <text x="20" y="260" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800">৳ ১৩০ <tspan font-size="13" fill="#94a3b8">/কেজি</tspan></text>
+    <rect x="20" y="280" width="80" height="20" rx="4" fill="#064e3b" />
+    <text x="28" y="294" fill="#6ee7b7" font-family="system-ui, -apple-system, sans-serif" font-size="11">▼ -১.৮% হ্রাস</text>
+
+    <rect x="20" y="312" width="210" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="125" y="332" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" text-anchor="middle">দরের বিস্তারিত দেখুন</text>
+  </g>
+</svg>

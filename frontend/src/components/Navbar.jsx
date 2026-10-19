@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Experience", id: "experience" },
   { name: "Education", id: "education" },
   { name: "Contact", id: "contact" },
+  { name: "Resume", to: "/resume", isRoute: true },
 ];
 
 const Navbar = () => {
@@ -19,6 +20,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const isHomePage = location.pathname === "/";
+  const isResumePage = location.pathname === "/resume";
 
   // Shadow and active section detection when scrolling on home page
   useEffect(() => {
@@ -27,9 +29,9 @@ const Navbar = () => {
 
       if (!isHomePage) return;
 
-      const sections = navLinks.map((link) =>
-        document.getElementById(link.id)
-      );
+      const sections = navLinks
+        .filter((link) => link.id)
+        .map((link) => document.getElementById(link.id));
 
       sections.forEach((section) => {
         if (!section) return;
@@ -53,7 +55,7 @@ const Navbar = () => {
     <header
       className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 print:hidden ${
         scrolled || !isHomePage
-          ? "bg-white/90 backdrop-blur-md shadow-md border-b border-gray-100"
+          ? "bg-white/95 backdrop-blur-md shadow-md border-b border-gray-100"
           : "bg-transparent"
       }`}
     >
@@ -61,19 +63,45 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-2xl font-extrabold tracking-tight text-gray-900 group flex items-center gap-2"
+          className="text-xl sm:text-2xl font-black tracking-tight text-gray-900 group flex items-center gap-2"
         >
-          <span className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-mono text-lg shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform">
-            D
+          <span className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white font-mono font-extrabold text-lg shadow-md shadow-blue-500/25 group-hover:scale-105 transition-transform">
+            NU
           </span>
-          <span className="bg-gradient-to-r from-gray-900 via-blue-900 to-blue-600 bg-clip-text text-transparent">
-            DevPortfolio<span className="text-blue-600">.</span>
+          <span className="bg-gradient-to-r from-gray-900 via-blue-950 to-blue-600 bg-clip-text text-transparent">
+            Nur Uddin<span className="text-blue-600">.</span>
           </span>
         </Link>
 
         {/* Desktop Navigation Links */}
         <ul className="hidden md:flex items-center gap-7">
           {navLinks.map((link) => {
+            if (link.isRoute) {
+              const isLinkActive = isResumePage;
+              return (
+                <li key={link.name}>
+                  <Link
+                    to={link.to}
+                    className={`relative py-1 font-medium text-sm transition-colors duration-200 flex items-center gap-1.5 ${
+                      isLinkActive
+                        ? "text-blue-600 font-semibold"
+                        : "text-gray-600 hover:text-blue-600"
+                    }`}
+                  >
+                    <span>{link.name}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-700 px-1.5 py-0.2 rounded">
+                      CV
+                    </span>
+                    <span
+                      className={`absolute left-0 -bottom-1 h-0.5 bg-blue-600 transition-all duration-300 ${
+                        isLinkActive ? "w-full" : "w-0 hover:w-full"
+                      }`}
+                    ></span>
+                  </Link>
+                </li>
+              );
+            }
+
             const href = isHomePage ? `#${link.id}` : `/#${link.id}`;
             const isLinkActive = isHomePage && active === link.id;
 
@@ -90,7 +118,7 @@ const Navbar = () => {
                   {link.name}
                   <span
                     className={`absolute left-0 -bottom-1 h-0.5 bg-blue-600 transition-all duration-300 ${
-                      isLinkActive ? "w-full" : "w-0 group-hover:w-full"
+                      isLinkActive ? "w-full" : "w-0 hover:w-full"
                     }`}
                   ></span>
                 </a>
@@ -106,7 +134,7 @@ const Navbar = () => {
             className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
           >
             <HiDocumentText className="text-lg" />
-            Resume
+            <span>Resume / CV</span>
           </Link>
         </div>
 
@@ -123,11 +151,31 @@ const Navbar = () => {
       {/* Mobile Menu Drawer */}
       <div
         className={`md:hidden bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-xl overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-96 py-6 px-6" : "max-h-0 py-0 px-6"
+          menuOpen ? "max-h-[30rem] py-6 px-6" : "max-h-0 py-0 px-6"
         }`}
       >
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-3.5">
           {navLinks.map((link) => {
+            if (link.isRoute) {
+              const isLinkActive = isResumePage;
+              return (
+                <li key={link.name}>
+                  <Link
+                    to={link.to}
+                    onClick={closeMenu}
+                    className={`flex items-center justify-between py-1.5 text-base font-medium transition ${
+                      isLinkActive ? "text-blue-600 font-semibold" : "text-gray-700 hover:text-blue-600"
+                    }`}
+                  >
+                    <span>{link.name}</span>
+                    <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full font-semibold border border-blue-200">
+                      Printable CV
+                    </span>
+                  </Link>
+                </li>
+              );
+            }
+
             const href = isHomePage ? `#${link.id}` : `/#${link.id}`;
             const isLinkActive = isHomePage && active === link.id;
 
@@ -147,14 +195,14 @@ const Navbar = () => {
           })}
 
           {/* Mobile Resume Button */}
-          <li className="pt-2 border-t border-gray-100">
+          <li className="pt-3 border-t border-gray-100">
             <Link
               to="/resume"
               onClick={closeMenu}
-              className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-xl font-semibold shadow hover:bg-blue-700 transition"
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-xl font-semibold shadow-md hover:from-blue-700 hover:to-indigo-700 transition"
             >
               <HiDocumentText className="text-xl" />
-              View Full Resume
+              <span>View Full Resume</span>
             </Link>
           </li>
         </ul>

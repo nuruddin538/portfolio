@@ -5,75 +5,85 @@ import {
   HiOutlineCheckCircle,
   HiOutlineSparkles,
 } from "react-icons/hi";
-import { FaLaptopCode, FaHandsHelping, FaAward } from "react-icons/fa";
+import { FaLaptopCode, FaHandsHelping, FaAward, FaBrain } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "Frontend Developer Trainee / Intern",
-    company: "Software Development Firm / Tech Lab",
-    location: "Dhaka, Bangladesh",
-    period: "Jan 2024 – Jun 2024",
-    type: "Internship / Practical Training",
+    role: "Full-Stack Next.js Development — Project-Based Experience",
+    company: "Personal & Academic Projects",
+    location: "Chattogram, Bangladesh",
+    period: "2023 – Present",
+    type: "Practical Full-Stack Engineering",
     badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
     responsibilities: [
-      "Engineered reusable and accessible React components according to Figma design specifications.",
-      "Integrated RESTful APIs, handled asynchronous state loading states, and reduced unnecessary re-renders.",
-      "Adopted professional Git workflow (feature branching, clean commit messages, code review PRs).",
-      "Collaborated in Agile sprints with team members to resolve UI bugs and enhance responsiveness.",
+      "Developed responsive, production-ready web applications using Next.js (App Router), React.js, TypeScript, and Tailwind CSS.",
+      "Built reusable, modular UI components and implemented intuitive modern UI/UX designs with mobile-first responsiveness.",
+      "Integrated REST APIs, handled asynchronous state pipelines, JSON data rendering, and comprehensive error boundaries.",
+      "Implemented secure authentication workflows and protected routes using Better Auth.",
+      "Practiced backend development with Node.js, Express.js, MongoDB, and Mongoose schema modeling.",
+      "Used Git and GitHub for source control, feature branching, and collaborative development workflows.",
+      "Deployed full-stack and frontend applications reliably using Vercel and Netlify with environment configuration.",
+      "Applied AI-assisted development tools to accelerate implementation, debug complex edge cases, and optimize workflows.",
     ],
-    technologies: ["React.js", "Tailwind CSS", "JavaScript ES6+", "Git", "REST APIs"],
+    technologies: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Better Auth",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Netlify",
+    ],
   },
   {
-    role: "Independent & Freelance Web Developer",
-    company: "Self-Employed / Client Work",
-    location: "Remote",
-    period: "2023 – Present",
-    type: "Freelance & Projects",
+    role: "Frontend & Web Application Development",
+    company: "Hands-on Showcase & Client Prototypes",
+    location: "Remote / Chattogram",
+    period: "2023 – 2024",
+    type: "Project Engineering",
     badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
     responsibilities: [
-      "Designed and deployed responsive web interfaces for multiple clients and personal portfolio initiatives.",
-      "Delivered pixel-perfect mobile-first designs with Tailwind CSS achieving top Lighthouse performance scores.",
-      "Configured automated deployments and DNS hosting setups on Vercel and Netlify.",
-      "Communicated directly with project stakeholders to gather requirements and iterate based on feedback.",
+      "Built interactive web applications including BazarDor (grocery price tracker), DevStack, and Fit-Log.",
+      "Crafted accessible, high-performance user interfaces achieving fast load times and clean Lighthouse metrics.",
+      "Transformed project requirements into functional component hierarchies and state models.",
+      "Continuously iterated on UI components using feedback and cross-device testing across Chrome, Firefox, and mobile browsers.",
     ],
-    technologies: ["React", "HTML5/CSS3", "JavaScript", "Tailwind CSS", "Vercel"],
-  },
-  {
-    role: "Academic Project Lead & Developer",
-    company: "University Software Lab",
-    location: "Dhaka, Bangladesh",
-    period: "2023 – 2024",
-    type: "Academic & Team Project",
-    badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
-    responsibilities: [
-      "Spearheaded the frontend architecture for a multi-page web portal as part of the academic capstone.",
-      "Coordinated task delegation among 3 team members and conducted internal code walkthroughs.",
-      "Implemented clean form validations, authentication flow, and local state persistence.",
-    ],
-    technologies: ["JavaScript", "Bootstrap 5", "Node.js Basics", "Database Systems"],
+    technologies: ["React.js", "TypeScript", "Vite", "Tailwind CSS", "Context API", "REST APIs"],
   },
 ];
 
-const valueProps = [
+const whyHireMe = [
   {
     icon: FaLaptopCode,
-    title: "Rapid Onboarding",
-    desc: "Solid foundational knowledge in React 19, modern JavaScript, and Git ensures minimal ramp-up time.",
+    title: "Rapid Learning & Adaptability",
+    desc: "I have a strong foundation in modern web technologies and a proactive willingness to learn new tools, frameworks, and engineering practices.",
   },
   {
     icon: HiOutlineSparkles,
-    title: "High Energy & Drive",
-    desc: "Passionate about writing clean code, actively taking feedback, and solving complex problems with enthusiasm.",
+    title: "Clean Code & Maintainability",
+    desc: "I focus on readable code, reusable components, structured component architecture, and continuous quality improvement.",
   },
   {
     icon: FaHandsHelping,
-    title: "Team Player",
-    desc: "Thrives in collaborative environments with respectful communication and strong empathy for peers.",
+    title: "Collaboration & Teamwork",
+    desc: "I value constructive feedback, clear communication, collaborative code reviews, and shared problem-solving within engineering teams.",
+  },
+  {
+    icon: FaBrain,
+    title: "Modern & AI-Driven Development",
+    desc: "I leverage AI-assisted workflows alongside fundamental programming knowledge to improve efficiency and solve development challenges.",
   },
   {
     icon: FaAward,
-    title: "Modern Best Practices",
-    desc: "Trained on the latest tools (Vite, Tailwind v4, Component-driven design) with zero outdated baggage.",
+    title: "Growth Mindset",
+    desc: "I am eager to contribute to real-world projects, learn from experienced developers, and grow into a versatile full-stack engineer.",
   },
 ];
 
@@ -84,15 +94,15 @@ const Experience = () => {
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
           <HiOutlineBriefcase className="text-blue-600 text-sm" />
-          <span>Practical Background</span>
+          <span>Hands-on Experience</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-          Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Experience</span>
+          Practical <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Development Experience</span>
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          My practical internships, freelance endeavors, and collaborative project experience demonstrating hands-on readiness.
+          Real-world project engineering, component architecture, authentication, and full-stack implementation experience.
         </p>
       </div>
 
@@ -139,9 +149,9 @@ const Experience = () => {
             </ul>
 
             {/* Technologies used */}
-            <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center gap-2">
+            <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center gap-1.5">
               <span className="text-xs font-bold uppercase text-gray-400 mr-1">
-                Tech:
+                Technologies:
               </span>
               {exp.technologies.map((tech) => (
                 <span
@@ -156,23 +166,23 @@ const Experience = () => {
         ))}
       </div>
 
-      {/* Why Hire Me as a Fresher Callout Card */}
+      {/* Why Hire Me as a Junior Developer Callout Card */}
       <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-blue-200/80 p-8 shadow-sm">
         <div className="text-center max-w-xl mx-auto mb-8 space-y-1">
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-            Why Hire Me as a Fresher Developer?
+            Why Hire Me as a Junior Developer?
           </h3>
           <p className="text-sm text-gray-500">
-            What I bring to your engineering team from day one.
+            Core attributes and strengths I contribute to engineering teams.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {valueProps.map((item) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {whyHireMe.map((item) => {
             const Icon = item.icon;
             return (
-              <div key={item.title} className="flex items-start gap-3.5 p-4 rounded-xl bg-blue-50/40 border border-blue-100/60">
-                <div className="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <div key={item.title} className="flex flex-col p-4 rounded-xl bg-blue-50/40 border border-blue-100/60 justify-between">
+                <div className="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs mb-3">
                   <Icon className="text-lg" />
                 </div>
                 <div>

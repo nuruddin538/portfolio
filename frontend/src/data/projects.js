@@ -1,86 +1,143 @@
-import project1 from "../assets/projects/project1.png";
-import project2 from "../assets/projects/project2.png";
-import project3 from "../assets/projects/project3.svg";
+import bazardorImg from "../assets/projects/bazardor.svg";
+import devstackImg from "../assets/projects/devstack.svg";
+import fitlogImg from "../assets/projects/fitlog.svg";
+import plantImg from "../assets/projects/plantdiscovery.svg";
+import bplImg from "../assets/projects/bpldream.svg";
 
 const projects = [
   {
     id: 1,
-    title: "Developer Portfolio & Showcase",
-    image: project1,
-    category: "Frontend Web Application",
+    title: "BazarDor — Bangla Grocery Price Tracker",
+    image: bazardorImg,
+    category: "Full-Stack Next.js Application",
     technologies: [
-      "React",
+      "Next.js",
+      "React.js",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript (ES6+)",
-      "React Router",
-      "Vite"
+      "Better Auth",
+      "REST APIs"
     ],
     description:
-      "A modern, high-performance personal portfolio built for showcasing frontend engineering skills, interactive projects, and a responsive resume viewer. Features smooth section navigation, responsive mobile menu, dynamic routing, and ATS-friendly printable resume.",
-    live: "https://example.com/portfolio-demo",
-    github: "https://github.com/example/portfolio-frontend",
+      "A Bangla-focused grocery price tracking application that helps users explore the daily prices of essential products and compare market prices with market-based grocery price information, authentication, and Bangla-friendly displays.",
+    live: "https://bazardor-json.vercel.app/",
+    github: "https://github.com/nuruddin538/bazar-dor",
     challenges: [
-      "Building a smooth active-section scroll spy with route-aware navigation",
-      "Crafting an ATS-compatible, print-optimized resume stylesheet in React",
-      "Ensuring fluid responsiveness across ultra-wide monitors down to small mobile viewports"
+      "Building a responsive product discovery interface with Bangla-friendly price and unit displays",
+      "Structuring product categories and detailed product pages with market-based grocery price information",
+      "Implementing secure authentication workflows and protected-route functionality using Better Auth",
+      "Architecting reusable UI components with clean Next.js App Router patterns"
     ],
     future: [
-      "Dark / Light theme mode toggle with localStorage persistence",
-      "Interactive contact form integration via EmailJS / Web3Forms",
-      "Markdown-powered tech blog section with syntax highlighting"
+      "Crowdsourced daily market price reporting by verified local vendors",
+      "Real-time price trend fluctuation charts using Chart.js",
+      "Offline caching and PWA functionality for quick market lookups"
     ],
   },
   {
     id: 2,
-    title: "TechGear - Modern Tech Store",
-    image: project2,
-    category: "E-Commerce Web App",
+    title: "DevStack — Technology Stack Builder",
+    image: devstackImg,
+    category: "Frontend Web Application",
     technologies: [
-      "React",
-      "Tailwind CSS",
-      "JavaScript",
-      "Context API",
-      "REST API"
+      "React.js",
+      "TypeScript",
+      "Vite",
+      "CSS3",
+      "React Toastify"
     ],
     description:
-      "A responsive, full-featured electronics and tech gadgets web application. Includes instant product category filtering, price range slider, real-time shopping cart drawer with quantity adjustments, and simulated checkout flow.",
-    live: "https://example.com/techgear-demo",
-    github: "https://github.com/example/techgear-ecommerce",
+      "An interactive web application that allows users to explore web development technologies and build personalized technology stacks with real-time stack management and interactive technology cards.",
+    live: "https://dev-stack-dc2uoo5os-md-nur-uddins-projects.vercel.app/",
+    github: "https://github.com/nuruddin538/DevStack",
     challenges: [
-      "Global cart state management with React Context without unnecessary re-renders",
-      "Smooth slide-over modal drawer implementation for cart and mobile filters",
-      "Instant multi-criteria client-side search and category filtering"
+      "Enforcing strict TypeScript-based data structures across diverse technology categories",
+      "Designing responsive interactive technology cards with multi-selection and stack composition",
+      "Managing dynamic stack state and seamless user feedback with toast notifications"
     ],
     future: [
-      "Integration with Stripe payment gateway test API",
-      "User authentication and order history dashboard",
-      "Wishlist system with localStorage persistence"
+      "Exporting personalized stack configurations as markdown or JSON architecture templates",
+      "Community sharing and upvoting for popular tech combinations",
+      "AI-driven stack recommendation based on project complexity and team size"
     ],
   },
   {
     id: 3,
-    title: "TaskFlow - Agile Kanban Board",
-    image: project3,
-    category: "Productivity & SaaS",
+    title: "Fit-Log — Fitness Tracking Application",
+    image: fitlogImg,
+    category: "Health & Fitness Web App",
     technologies: [
-      "React",
+      "React.js",
+      "TypeScript",
       "Tailwind CSS",
-      "JavaScript (ES6+)",
-      "LocalStorage"
+      "JavaScript",
+      "Context API"
     ],
     description:
-      "An intuitive task management and productivity dashboard inspired by Trello and Jira. Supports custom task creation, priority color-coding, multi-stage workflow columns (Backlog, In Progress, Completed), and search indexing.",
-    live: "https://example.com/taskflow-demo",
-    github: "https://github.com/example/taskflow-kanban",
+      "A fitness-focused web application built to practice interactive interfaces, activity logging, and modern frontend state management with clean, responsive dashboards.",
+    live: "https://fit-log-ten-sooty.vercel.app/",
+    github: "https://github.com/nuruddin538/fit-log",
     challenges: [
-      "Seamless task state transitions across columns with proper data immutability",
-      "Persistent state synchronization with browser LocalStorage",
-      "Clean UI component design adhering to accessibility standards"
+      "Managing multi-routine workout logs and active session counters using React Context API",
+      "Creating mobile-first responsive gym dashboards using modern Tailwind CSS layouts",
+      "Validating numeric workout inputs and volume calculations with TypeScript"
     ],
     future: [
-      "Drag and drop reordering using @dnd-kit/core",
-      "Firebase Firestore integration for multi-device real-time sync",
-      "Subtasks checklist and due-date notification system"
+      "Local storage and IndexedDB offline persistence for workouts without network coverage",
+      "Interactive weekly volume graphs and personal record (PR) badges",
+      "Custom routine builder with built-in rest interval audio cues"
+    ],
+  },
+  {
+    id: 4,
+    title: "Plant Discovery Application",
+    image: plantImg,
+    category: "REST API Web Application",
+    technologies: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "REST APIs",
+      "CSS3"
+    ],
+    description:
+      "A React-based application for exploring plant information and browsing categories using external API data, with rich botanical details, responsive cards, and search filtering.",
+    live: "https://adorable-starship-b29618.netlify.app/",
+    github: "https://github.com/nuruddin538",
+    challenges: [
+      "Asynchronous REST API data fetching with robust loading and error state management",
+      "Category-based browsing and dynamic query filtering across plant species",
+      "Building clean, reusable UI components with responsive CSS layouts"
+    ],
+    future: [
+      "Plant care reminder calendar with watering and sunlight notifications",
+      "Image recognition integration for instant plant species identification",
+      "User plant diary for tracking growth milestones"
+    ],
+  },
+  {
+    id: 5,
+    title: "BPL Dream — Cricket Player Application",
+    image: bplImg,
+    category: "Sports & Entertainment Web App",
+    technologies: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "CSS3",
+      "JSON"
+    ],
+    description:
+      "A cricket-themed web application featuring Bangladesh Premier League player profiles, fixtures, and organized tournament navigation rendered from structured JSON data.",
+    live: "https://adorable-starship-b29618.netlify.app/",
+    github: "https://github.com/nuruddin538",
+    challenges: [
+      "Structured JSON data rendering across home, fixtures, players, and schedule sections",
+      "Component-based UI development with responsive mobile navigation",
+      "Team roster filtering and individual player stat comparisons"
+    ],
+    future: [
+      "Live match score API integration with real-time ball-by-ball updates",
+      "Interactive fantasy dream team builder with point calculation rules",
+      "Match schedule export to Google Calendar"
     ],
   },
 ];

@@ -9,62 +9,72 @@ import { FaGraduationCap, FaCertificate } from "react-icons/fa";
 
 const educationHistory = [
   {
-    degree: "B.Sc. in Computer Science & Engineering (CSE)",
-    institution: "Your University / College Name",
-    location: "Dhaka, Bangladesh",
-    period: "2022 – 2026 (Expected)",
-    grade: "CGPA: 3.50+ / 4.00",
+    degree: "Bachelor of Science (B.Sc.) — Physics, Chemistry & Mathematics",
+    institution: "Chittagong College",
+    location: "Chattogram, Bangladesh",
+    period: "Undergraduate Studies",
+    grade: "Coursework Completed",
     description:
-      "Gained comprehensive theoretical and practical knowledge in computational thinking, software engineering, and web technologies.",
+      "Studied Physics, Chemistry, and Mathematics, developing analytical thinking, logical reasoning, quantitative problem-solving skills, and scientific curiosity that translate directly into structured software engineering.",
     coursework: [
-      "Data Structures & Algorithms",
-      "Object-Oriented Programming (Java/C++)",
-      "Database Management Systems (DBMS)",
-      "Web Technologies & Engineering",
-      "Operating Systems & Computer Networks",
-      "Software Design Patterns",
+      "Mathematical Analysis & Calculus",
+      "Applied Physics & Mechanics",
+      "Chemical Thermodynamics",
+      "Analytical & Quantitative Problem Solving",
+      "Logical & Structured Reasoning",
     ],
   },
   {
-    degree: "Higher Secondary Certificate (HSC) – Science",
-    institution: "Your College Name",
-    location: "Dhaka, Bangladesh",
-    period: "2019 – 2021",
-    grade: "GPA: 5.00 / 5.00 (A+)",
+    degree: "Higher Secondary Certificate (HSC) — Science",
+    institution: "Baitush Sharaf Adarsha Kamil Madrasah",
+    location: "Chattogram, Bangladesh",
+    period: "2016 – 2018",
+    grade: "GPA: 4.33 / 5.00",
     description:
-      "Completed higher secondary education with a major in Science, developing strong analytical thinking and mathematical problem-solving skills.",
-    coursework: ["Physics", "Chemistry", "Higher Mathematics", "Information & Communication Tech (ICT)"],
+      "Completed higher secondary education in the Science stream with a strong emphasis on mathematical reasoning, analytical sciences, and foundational ICT concepts.",
+    coursework: [
+      "Higher Mathematics",
+      "Physics",
+      "Chemistry",
+      "Information and Communication Technology (ICT)",
+    ],
   },
   {
-    degree: "Secondary School Certificate (SSC) – Science",
-    institution: "Your High School Name",
-    location: "Dhaka, Bangladesh",
-    period: "2017 – 2019",
-    grade: "GPA: 5.00 / 5.00 (A+)",
+    degree: "Secondary School Certificate (SSC) — Science",
+    institution: "Sakfura Darus Sunnah Kamil Madrasa",
+    location: "Chattogram, Bangladesh",
+    period: "2014 – 2015",
+    grade: "GPA: 4.44 / 5.00",
     description:
-      "Graduated secondary school with distinction in Science, establishing foundational curiosity for science and computing.",
-    coursework: ["General Science", "Advanced Mathematics", "Computer Studies"],
+      "Graduated secondary school with distinction in Science, establishing core scientific methodology, computational logic, and problem-solving fundamentals.",
+    coursework: [
+      "General Science",
+      "Mathematics",
+      "Physics",
+      "Chemistry",
+      "ICT (Information Tech)",
+    ],
   },
 ];
 
 const certifications = [
   {
-    title: "Complete Web Development Bootcamp (MERN)",
-    issuer: "Online Learning Academy",
+    title: "AI-Driven Full-Stack Next.js Engineering",
+    issuer: "Independent Project Mastery",
     year: "2024",
-    desc: "Built 10+ real-world applications covering React, Tailwind CSS, Node.js, Express, and MongoDB.",
+    desc: "Built comprehensive full-stack applications integrating Next.js App Router, TypeScript, Better Auth, MongoDB, and Tailwind CSS.",
   },
   {
-    title: "Responsive Web Design Certification",
-    issuer: "freeCodeCamp",
+    title: "Modern React.js & TypeScript Architecture",
+    issuer: "Self-Directed Development",
+    year: "2024",
+    desc: "Mastery of React hooks, context state management, reusable component design, and type-safe frontend structures.",
+  },
+  {
+    title: "REST APIs & Asynchronous JavaScript",
+    issuer: "Full-Stack Development Workflow",
     year: "2023",
-    desc: "Verified competency in semantic HTML5, modern CSS Grid/Flexbox, and accessible web standards.",
-  },
-  {
-    title: "JavaScript Algorithms & Data Structures",
-    issuer: "freeCodeCamp",
-    year: "2024",
-    desc: "Mastery of ES6+, functional programming, OOP in JS, and algorithmic problem-solving.",
+    desc: "Rigorous practice with asynchronous HTTP requests, Express.js middleware, Postman debugging, and CRUD data pipelines.",
   },
 ];
 
@@ -79,11 +89,11 @@ const Education = () => {
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-          My <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Education</span>
+          Educational <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Background</span>
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          My educational journey and professional credentials that built my foundational computer science and engineering mindset.
+          My academic qualifications in science and mathematics that built my analytical foundation and disciplined engineering mindset.
         </p>
       </div>
 
@@ -92,7 +102,7 @@ const Education = () => {
         <div className="lg:col-span-8 space-y-6">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-4">
             <FaGraduationCap className="text-blue-600" />
-            <span>Academic Qualifications</span>
+            <span>Academic History</span>
           </h3>
 
           <div className="space-y-6">
@@ -137,7 +147,7 @@ const Education = () => {
                 <div>
                   <h5 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1">
                     <HiOutlineBookOpen className="text-blue-600 text-sm" />
-                    Key Courses Studied
+                    Key Subjects &amp; Focus Areas
                   </h5>
                   <div className="flex flex-wrap gap-1.5">
                     {edu.coursework.map((course) => (
@@ -159,7 +169,7 @@ const Education = () => {
         <div className="lg:col-span-4 space-y-6">
           <h3 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-4">
             <FaCertificate className="text-amber-500" />
-            <span>Certifications &amp; Courses</span>
+            <span>Continuous Learning</span>
           </h3>
 
           <div className="space-y-4">
@@ -189,14 +199,14 @@ const Education = () => {
               </div>
             ))}
 
-            {/* Quick Note Card */}
+            {/* AI-Assisted Engineering Card */}
             <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-md">
-              <h4 className="font-bold text-base mb-1">Continuous Learner</h4>
+              <h4 className="font-bold text-base mb-1">AI-Assisted Engineering</h4>
               <p className="text-xs text-blue-100 leading-relaxed mb-3">
-                Always sharpening my problem-solving abilities and keeping updated with modern web standards and React 19 innovations.
+                Combining sound software fundamentals with AI-driven development to prototype quickly, debug effectively, and write high-standard code.
               </p>
               <span className="inline-block bg-white/20 backdrop-blur-xs text-white text-xs font-semibold px-3 py-1 rounded-full">
-                Active Code Contributor
+                Productive &amp; Scalable
               </span>
             </div>
           </div>

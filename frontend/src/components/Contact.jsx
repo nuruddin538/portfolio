@@ -6,7 +6,7 @@ import {
   HiOutlineChatAlt2,
   HiOutlineCheckCircle,
 } from "react-icons/hi";
-import { FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaTwitter, FaPaperPlane, FaGlobe } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -67,7 +67,7 @@ const Contact = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          Have an entry-level opening, internship, freelance project, or simply want to chat about tech? My inbox is always open.
+          I'm open to junior and entry-level development opportunities, collaborative projects, and professional networking.
         </p>
       </div>
 
@@ -79,31 +79,31 @@ const Contact = () => {
               Contact Information
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              I am actively looking for full-time junior frontend or full-stack opportunities and am available to join immediately.
+              Feel free to reach out directly via email, phone, or any of the social platforms below. I respond promptly!
             </p>
 
             <div className="space-y-4 pt-2">
               {/* Email */}
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:nuruddinnur538@gmail.com"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                   <HiOutlineMail className="text-xl" />
                 </div>
-                <div>
+                <div className="overflow-hidden">
                   <span className="text-xs text-gray-500 font-medium block">
                     Email Address
                   </span>
-                  <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    youremail@example.com
+                  <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors truncate block">
+                    nuruddinnur538@gmail.com
                   </span>
                 </div>
               </a>
 
               {/* Phone */}
               <a
-                href="tel:+8801700000000"
+                href="tel:+8801766463242"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -114,7 +114,7 @@ const Contact = () => {
                     Phone / WhatsApp
                   </span>
                   <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                    +880 1700-000000
+                    +880 1766463242
                   </span>
                 </div>
               </a>
@@ -129,20 +129,40 @@ const Contact = () => {
                     Location
                   </span>
                   <span className="text-sm font-semibold text-gray-900">
-                    Dhaka, Bangladesh (Remote / On-site)
+                    Chattogram, Bangladesh
                   </span>
                 </div>
               </div>
+
+              {/* Live Portfolio */}
+              <a
+                href="https://adorable-starship-b29618.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 hover:bg-blue-50/70 border border-gray-100 hover:border-blue-200 transition group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                  <FaGlobe className="text-lg" />
+                </div>
+                <div className="overflow-hidden">
+                  <span className="text-xs text-gray-500 font-medium block">
+                    Hosted Portfolio
+                  </span>
+                  <span className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors truncate block">
+                    adorable-starship-b29618.netlify.app
+                  </span>
+                </div>
+              </a>
             </div>
 
             {/* Social Links Bar */}
             <div className="pt-4 border-t border-gray-100">
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-3">
-                Social Profiles
+                Social &amp; Developer Profiles
               </span>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/nuruddin538"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub Profile"
@@ -151,19 +171,19 @@ const Contact = () => {
                   <FaGithub className="text-lg" />
                 </a>
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.facebook.com/nuruddin538"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="LinkedIn Profile"
+                  aria-label="Facebook Profile"
                   className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-blue-600 hover:text-white flex items-center justify-center text-gray-700 transition"
                 >
-                  <FaLinkedin className="text-lg" />
+                  <FaFacebook className="text-lg" />
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="https://x.com/NurUddinNur11"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="Twitter Profile"
+                  aria-label="X Twitter Profile"
                   className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-sky-500 hover:text-white flex items-center justify-center text-gray-700 transition"
                 >
                   <FaTwitter className="text-lg" />
@@ -190,7 +210,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm font-bold">Message sent successfully!</p>
                   <p className="text-xs text-emerald-700">
-                    Thank you for reaching out. I'll get back to you shortly.
+                    Thank you for reaching out. I will get back to you shortly at {formData.email || "your email"}.
                   </p>
                 </div>
               </div>
@@ -216,7 +236,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="John Doe"
+                    placeholder="e.g. John Smith"
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
                   />
@@ -243,7 +263,7 @@ const Contact = () => {
               {/* Subject */}
               <div>
                 <label htmlFor="subject" className="block text-xs font-semibold text-gray-700 uppercase mb-1.5">
-                  Subject / Role
+                  Subject / Opportunity
                 </label>
                 <input
                   id="subject"
@@ -251,7 +271,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="Job Opportunity / Project Inquiry"
+                  placeholder="Junior Full-Stack Opportunity / Project Inquiry"
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
                 />
               </div>
@@ -267,7 +287,7 @@ const Contact = () => {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Hello! We are looking for a Junior Frontend Developer to join our team..."
+                  placeholder="Hello Nur Uddin! We came across your portfolio and would love to discuss a Junior Developer opportunity..."
                   required
                   className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50/50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition resize-none"
                 ></textarea>

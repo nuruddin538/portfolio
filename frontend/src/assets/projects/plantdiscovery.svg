@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-plant" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="60%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="leaf-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <filter id="shadow-plant" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-plant)"/>
+  
+  <circle cx="1100" cy="120" r="190" fill="#22c55e" fill-opacity="0.08" />
+  <circle cx="120" cy="540" r="210" fill="#15803d" fill-opacity="0.07" />
+
+  <!-- Navbar -->
+  <rect x="60" y="40" width="1080" height="70" rx="16" fill="#0f172a" fill-opacity="0.9" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="90" y="58" width="34" height="34" rx="8" fill="url(#leaf-glow)" />
+  <text x="135" y="80" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800">FloraPedia</text>
+  <text x="250" y="80" fill="#86efac" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Plant Discovery &amp; Botanical Species Explorer</text>
+
+  <!-- Category Pills in Navbar -->
+  <rect x="760" y="55" width="160" height="40" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="800" y="80" fill="#cbd5e1" font-size="13">REST API Sync</text>
+  <circle cx="782" cy="75" r="5" fill="#22c55e"/>
+
+  <rect x="940" y="55" width="170" height="40" rx="10" fill="url(#leaf-glow)"/>
+  <text x="965" y="80" fill="#ffffff" font-size="13" font-weight="700">Explore 500+ Plants</text>
+
+  <!-- Filter Bar -->
+  <g transform="translate(60, 130)">
+    <rect width="1080" height="60" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    
+    <rect x="20" y="12" width="120" height="36" rx="8" fill="url(#leaf-glow)"/>
+    <text x="80" y="35" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">All Species</text>
+
+    <rect x="150" y="12" width="120" height="36" rx="8" fill="#0f172a"/>
+    <text x="210" y="35" fill="#94a3b8" font-size="13" text-anchor="middle">Indoor Plants</text>
+
+    <rect x="280" y="12" width="120" height="36" rx="8" fill="#0f172a"/>
+    <text x="340" y="35" fill="#94a3b8" font-size="13" text-anchor="middle">Succulents</text>
+
+    <rect x="410" y="12" width="120" height="36" rx="8" fill="#0f172a"/>
+    <text x="470" y="35" fill="#94a3b8" font-size="13" text-anchor="middle">Air Purifying</text>
+
+    <rect x="540" y="12" width="120" height="36" rx="8" fill="#0f172a"/>
+    <text x="600" y="35" fill="#94a3b8" font-size="13" text-anchor="middle">Medicinal</text>
+
+    <!-- Search right -->
+    <rect x="740" y="12" width="320" height="36" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="765" y="35" fill="#64748b" font-size="12">Search by scientific or common name...</text>
+  </g>
+
+  <!-- Botanical Plant Cards Grid -->
+  <!-- Card 1: Monstera Deliciosa -->
+  <g transform="translate(60, 215)" filter="url(#shadow-plant)">
+    <rect width="250" height="400" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="180" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="105" r="50" fill="#065f46" fill-opacity="0.4"/>
+    <text x="125" y="118" fill="#4ade80" font-size="44" text-anchor="middle">🌿</text>
+    <rect x="25" y="25" width="90" height="22" rx="6" fill="#064e3b"/>
+    <text x="70" y="40" fill="#a7f3d0" font-size="11" font-weight="700" text-anchor="middle">Air Purifying</text>
+
+    <text x="20" y="225" fill="#f8fafc" font-size="17" font-weight="800">Monstera Deliciosa</text>
+    <text x="20" y="246" fill="#4ade80" font-style="italic" font-size="12">Swiss Cheese Plant</text>
+    <text x="20" y="275" fill="#94a3b8" font-size="12">Light: Indirect Sunlight</text>
+    <text x="20" y="295" fill="#94a3b8" font-size="12">Water: Every 1-2 weeks</text>
+    
+    <rect x="20" y="325" width="210" height="45" rx="10" fill="url(#leaf-glow)"/>
+    <text x="125" y="353" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Botanical Profile &rarr;</text>
+  </g>
+
+  <!-- Card 2: Sansevieria (Snake Plant) -->
+  <g transform="translate(335, 215)" filter="url(#shadow-plant)">
+    <rect width="250" height="400" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="180" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="105" r="50" fill="#065f46" fill-opacity="0.4"/>
+    <text x="125" y="118" fill="#4ade80" font-size="44" text-anchor="middle">🪴</text>
+    <rect x="25" y="25" width="90" height="22" rx="6" fill="#064e3b"/>
+    <text x="70" y="40" fill="#a7f3d0" font-size="11" font-weight="700" text-anchor="middle">Low Light</text>
+
+    <text x="20" y="225" fill="#f8fafc" font-size="17" font-weight="800">Sansevieria Trifasciata</text>
+    <text x="20" y="246" fill="#4ade80" font-style="italic" font-size="12">Snake Plant</text>
+    <text x="20" y="275" fill="#94a3b8" font-size="12">Light: Low to bright</text>
+    <text x="20" y="295" fill="#94a3b8" font-size="12">Water: Every 2-3 weeks</text>
+
+    <rect x="20" y="325" width="210" height="45" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="125" y="353" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="middle">Botanical Profile &rarr;</text>
+  </g>
+
+  <!-- Card 3: Ficus Lyrata -->
+  <g transform="translate(610, 215)" filter="url(#shadow-plant)">
+    <rect width="250" height="400" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="180" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="105" r="50" fill="#065f46" fill-opacity="0.4"/>
+    <text x="125" y="118" fill="#4ade80" font-size="44" text-anchor="middle">🌱</text>
+    <rect x="25" y="25" width="90" height="22" rx="6" fill="#064e3b"/>
+    <text x="70" y="40" fill="#a7f3d0" font-size="11" font-weight="700" text-anchor="middle">Statement</text>
+
+    <text x="20" y="225" fill="#f8fafc" font-size="17" font-weight="800">Ficus Lyrata</text>
+    <text x="20" y="246" fill="#4ade80" font-style="italic" font-size="12">Fiddle-Leaf Fig</text>
+    <text x="20" y="275" fill="#94a3b8" font-size="12">Light: Bright filtered</text>
+    <text x="20" y="295" fill="#94a3b8" font-size="12">Water: Top soil dry</text>
+
+    <rect x="20" y="325" width="210" height="45" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="125" y="353" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="middle">Botanical Profile &rarr;</text>
+  </g>
+
+  <!-- Card 4: Aloe Barbadensis -->
+  <g transform="translate(885, 215)" filter="url(#shadow-plant)">
+    <rect width="250" height="400" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="15" y="15" width="220" height="180" rx="12" fill="#1e293b" />
+    <circle cx="125" cy="105" r="50" fill="#065f46" fill-opacity="0.4"/>
+    <text x="125" y="118" fill="#4ade80" font-size="44" text-anchor="middle">🌵</text>
+    <rect x="25" y="25" width="90" height="22" rx="6" fill="#064e3b"/>
+    <text x="70" y="40" fill="#a7f3d0" font-size="11" font-weight="700" text-anchor="middle">Medicinal</text>
+
+    <text x="20" y="225" fill="#f8fafc" font-size="17" font-weight="800">Aloe Barbadensis</text>
+    <text x="20" y="246" fill="#4ade80" font-style="italic" font-size="12">Aloe Vera</text>
+    <text x="20" y="275" fill="#94a3b8" font-size="12">Light: Direct sunlight</text>
+    <text x="20" y="295" fill="#94a3b8" font-size="12">Water: Drought tolerant</text>
+
+    <rect x="20" y="325" width="210" height="45" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="125" y="353" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="middle">Botanical Profile &rarr;</text>
+  </g>
+</svg>

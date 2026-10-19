@@ -43,7 +43,7 @@ const ProjectDetails = () => {
         <div className="bg-white rounded-2xl border border-gray-200/90 shadow-sm overflow-hidden p-6 sm:p-10 space-y-8">
           
           {/* Main Screenshot */}
-          <div className="rounded-xl overflow-hidden border border-gray-200/80 shadow-md aspect-video bg-gray-100">
+          <div className="rounded-xl overflow-hidden border border-gray-200/80 shadow-md aspect-video bg-gray-900">
             <img
               src={project.image}
               alt={project.title}

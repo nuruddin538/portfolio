@@ -13,20 +13,20 @@ import heroImg from "../assets/hero.png";
 const AboutMe = () => {
   const highlights = [
     {
-      title: "Clean & Maintainable Code",
-      desc: "Writing component-driven, reusable code adhering to modern best practices.",
+      title: "Clean Code & Reusable Components",
+      desc: "Emphasizing maintainable architecture, structured modular components, and modern coding standards.",
     },
     {
-      title: "Fast Learner & Adaptable",
-      desc: "Quick to pick up new libraries, frameworks, and engineering workflows.",
+      title: "AI-Driven Engineering Workflows",
+      desc: "Leveraging cutting-edge AI-assisted tools for swift problem solving, debugging, and development acceleration.",
     },
     {
-      title: "Responsive & Pixel-Perfect",
-      desc: "Obsessed with creating fluid layouts that work flawlessly on all devices.",
+      title: "Responsive & Mobile-First Design",
+      desc: "Creating pixel-perfect, accessible, and high-performance interfaces that excel on every device.",
     },
     {
-      title: "Problem Solver",
-      desc: "Passionate about debugging, analytical thinking, and optimizing UX.",
+      title: "Rapid Learning & Growth Mindset",
+      desc: "Continuously mastering emerging tools, full-stack technologies, and best engineering practices.",
     },
   ];
 
@@ -44,7 +44,7 @@ const AboutMe = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          A glimpse into my journey, core values, and dedication as a passionate fresher web developer.
+          Transforming ideas into intelligent, seamless, and user-friendly web experiences with modern full-stack technologies.
         </p>
       </div>
 
@@ -59,16 +59,16 @@ const AboutMe = () => {
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 shrink-0">
                 <img
                   src={heroImg}
-                  alt="Developer graphic"
+                  alt="Nur Uddin developer avatar"
                   className="w-10 h-10 object-contain brightness-200"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Your Name</h3>
-                <p className="text-sm font-medium text-blue-600">Fresher Web Developer</p>
+                <h3 className="text-xl font-bold text-gray-900">Nur Uddin</h3>
+                <p className="text-sm font-medium text-blue-600">AI-Driven Full-Stack Next.js Developer</p>
                 <div className="flex items-center gap-1.5 text-xs text-gray-500 mt-1">
                   <HiOutlineLocationMarker className="text-gray-400" />
-                  <span>Dhaka, Bangladesh</span>
+                  <span>Chattogram, Bangladesh</span>
                 </div>
               </div>
             </div>
@@ -77,39 +77,44 @@ const AboutMe = () => {
             <div className="space-y-3 text-sm text-gray-600">
               <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
                 <span className="flex items-center gap-2 text-gray-500">
-                  <HiOutlineBriefcase className="text-blue-600" /> Availability:
+                  <HiOutlineBriefcase className="text-blue-600" /> Career Goal:
                 </span>
                 <span className="font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded text-xs">
-                  Immediate Joining
+                  Junior / Entry-Level Developer
                 </span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
                 <span className="flex items-center gap-2 text-gray-500">
                   <FaLaptopCode className="text-blue-600" /> Primary Focus:
                 </span>
-                <span className="font-semibold text-gray-800">React &amp; Modern Frontend</span>
+                <span className="font-semibold text-gray-800">Next.js &amp; Full-Stack</span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
                 <span className="flex items-center gap-2 text-gray-500">
-                  <HiOutlineMail className="text-blue-600" /> Communication:
+                  <HiOutlineMail className="text-blue-600" /> Email:
                 </span>
-                <span className="font-semibold text-gray-800">English &amp; Bengali</span>
+                <a
+                  href="mailto:nuruddinnur538@gmail.com"
+                  className="font-semibold text-blue-600 hover:underline truncate max-w-[190px]"
+                >
+                  nuruddinnur538@gmail.com
+                </a>
               </div>
             </div>
 
             {/* Micro Stats */}
             <div className="grid grid-cols-3 gap-3 pt-6 mt-6 border-t border-gray-100 text-center">
               <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-blue-600">3+</span>
-                <span className="text-[11px] text-gray-500 font-medium">Demo Projects</span>
+                <span className="block text-2xl font-black text-blue-600">5+</span>
+                <span className="text-[11px] text-gray-500 font-medium">Projects Built</span>
               </div>
               <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-indigo-600">500+</span>
-                <span className="text-[11px] text-gray-500 font-medium">Coding Hours</span>
-              </div>
-              <div className="p-2.5 bg-gray-50 rounded-xl">
-                <span className="block text-2xl font-black text-emerald-600">100%</span>
+                <span className="block text-2xl font-black text-indigo-600">100%</span>
                 <span className="text-[11px] text-gray-500 font-medium">Commitment</span>
+              </div>
+              <div className="p-2.5 bg-gray-50 rounded-xl">
+                <span className="block text-2xl font-black text-emerald-600">Ready</span>
+                <span className="text-[11px] text-gray-500 font-medium">Immediate Hire</span>
               </div>
             </div>
           </div>
@@ -119,13 +124,16 @@ const AboutMe = () => {
         <div className="lg:col-span-7 space-y-6">
           <div className="space-y-4 text-gray-600 leading-relaxed text-base sm:text-lg">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight leading-snug">
-              Turning complex design ideas into seamless, interactive web experiences.
+              Turning Ideas into Intelligent, Seamless Web Experiences.
             </h3>
             <p>
-              I am an aspiring and self-driven <strong>Fresher Web Developer</strong> with a solid academic foundation in Computer Science and an intense passion for modern frontend technologies. My journey began with experimenting with basic HTML &amp; CSS, which quickly evolved into building dynamic, full-fledged Single Page Applications with <strong>React.js</strong> and <strong>Tailwind CSS</strong>.
+              I am a passionate and self-driven developer focused on building modern, responsive, and high-performance web applications using <strong>Next.js, React.js, TypeScript, and Tailwind CSS</strong>. I leverage AI-assisted development tools to improve productivity, solve problems efficiently, and create intuitive digital experiences.
             </p>
             <p>
-              As a fresher, I bring raw enthusiasm, fresh perspective, and a relentless drive to master modern tools. I place high value on writing clean, accessible, and maintainable code. I am eager to contribute to collaborative engineering teams where I can learn from senior developers and deliver immediate value.
+              I enjoy transforming ideas and designs into functional, accessible, and user-friendly web applications. My development approach emphasizes clean code, reusable components, responsive layouts, and maintainable architecture. I work with modern frontend technologies and have practical project experience with backend development, REST APIs, databases (MongoDB &amp; Mongoose), and modern authentication systems (Better Auth).
+            </p>
+            <p className="text-sm text-gray-500">
+              My goal is to contribute to collaborative development teams, build meaningful digital products, and grow as a versatile full-stack engineer.
             </p>
           </div>
 

@@ -8,35 +8,61 @@ import {
   FaGitAlt,
   FaNpm,
   FaChrome,
+  FaRobot,
 } from "react-icons/fa";
 import {
+  SiNextdotjs,
+  SiTypescript,
   SiTailwindcss,
-  SiBootstrap,
   SiMongodb,
-  SiFirebase,
+  SiMongoose,
   SiVite,
   SiPostman,
   SiVercel,
 } from "react-icons/si";
-import { HiOutlineCode, HiOutlineServer, HiOutlineTerminal } from "react-icons/hi";
+import {
+  HiOutlineCode,
+  HiOutlineServer,
+  HiOutlineTerminal,
+  HiOutlineShieldCheck,
+  HiOutlineSparkles,
+} from "react-icons/hi";
 
 const categories = [
   { id: "all", name: "All Skills" },
-  { id: "frontend", name: "Frontend", icon: HiOutlineCode },
-  { id: "backend", name: "Backend & DB", icon: HiOutlineServer },
-  { id: "tools", name: "Tools & Deploy", icon: HiOutlineTerminal },
+  { id: "frontend", name: "Frontend Development", icon: HiOutlineCode },
+  { id: "backend", name: "Backend & Database", icon: HiOutlineServer },
+  { id: "tools", name: "Tools & Deployment", icon: HiOutlineTerminal },
 ];
 
 const skillsData = [
   // Frontend
+  {
+    name: "Next.js",
+    category: "frontend",
+    icon: SiNextdotjs,
+    color: "text-gray-900",
+    bg: "bg-gray-100 border-gray-200",
+    level: "Advanced",
+    description: "App Router, Server & Client Components, Dynamic Routing, SSR, Data Fetching",
+  },
   {
     name: "React.js",
     category: "frontend",
     icon: FaReact,
     color: "text-cyan-500",
     bg: "bg-cyan-50 border-cyan-100",
+    level: "Advanced",
+    description: "Reusable Components, React Hooks, Context API, State Management",
+  },
+  {
+    name: "TypeScript",
+    category: "frontend",
+    icon: SiTypescript,
+    color: "text-blue-600",
+    bg: "bg-blue-50 border-blue-100",
     level: "Proficient",
-    description: "Hooks, Router, Context API, Component Lifecycle",
+    description: "Type Annotations, Interfaces, Generics, Type-Safe Architecture",
   },
   {
     name: "JavaScript (ES6+)",
@@ -44,8 +70,8 @@ const skillsData = [
     icon: FaJsSquare,
     color: "text-yellow-500",
     bg: "bg-yellow-50 border-yellow-100",
-    level: "Proficient",
-    description: "Async/Await, DOM manipulation, Array methods, ES6 Modules",
+    level: "Advanced",
+    description: "Promises, Async/Await, Array Methods, ES6 Modules, DOM Manipulation",
   },
   {
     name: "Tailwind CSS",
@@ -53,8 +79,8 @@ const skillsData = [
     icon: SiTailwindcss,
     color: "text-teal-500",
     bg: "bg-teal-50 border-teal-100",
-    level: "Proficient",
-    description: "Utility classes, Flex/Grid layouts, Dark mode, Custom themes",
+    level: "Advanced",
+    description: "Utility-First, Flexbox & CSS Grid, Responsive Design, Dark Mode",
   },
   {
     name: "HTML5 & Semantic Markup",
@@ -63,7 +89,7 @@ const skillsData = [
     color: "text-orange-500",
     bg: "bg-orange-50 border-orange-100",
     level: "Advanced",
-    description: "Semantic elements, SEO optimization, Forms & Accessibility",
+    description: "Semantic Markup, Accessible Forms, SEO-Friendly Structure",
   },
   {
     name: "CSS3 & Modern Layouts",
@@ -72,54 +98,72 @@ const skillsData = [
     color: "text-blue-500",
     bg: "bg-blue-50 border-blue-100",
     level: "Advanced",
-    description: "Flexbox, CSS Grid, Transitions, Keyframe Animations",
+    description: "Modern Layouts, Transitions, Keyframe Animations, Flexbox, Grid",
   },
   {
-    name: "Bootstrap 5",
+    name: "HeroUI & UI Libraries",
     category: "frontend",
-    icon: SiBootstrap,
-    color: "text-purple-500",
+    icon: HiOutlineSparkles,
+    color: "text-purple-600",
     bg: "bg-purple-50 border-purple-100",
-    level: "Comfortable",
-    description: "Responsive grid, Utility classes, Modal dialogs",
+    level: "Proficient",
+    description: "Component-Based UI Development, Accessible Modals, Drawers",
   },
 
-  // Backend & DB
+  // Backend & Database
   {
-    name: "Node.js (Basics)",
+    name: "Node.js",
     category: "backend",
     icon: FaNodeJs,
-    color: "text-emerald-500",
-    bg: "bg-emerald-50 border-emerald-100",
-    level: "Familiar",
-    description: "Server architecture, Event loop, NPM packages",
-  },
-  {
-    name: "Express.js (Basics)",
-    category: "backend",
-    icon: HiOutlineServer,
-    color: "text-gray-700",
-    bg: "bg-gray-50 border-gray-200",
-    level: "Familiar",
-    description: "Routing, Middleware, RESTful API endpoints",
-  },
-  {
-    name: "MongoDB (CRUD)",
-    category: "backend",
-    icon: SiMongodb,
     color: "text-emerald-600",
     bg: "bg-emerald-50 border-emerald-100",
-    level: "Familiar",
-    description: "Collections, Documents, Query filters, Aggregations",
+    level: "Proficient",
+    description: "Server-Side JavaScript, Asynchronous Programming, NPM Packages",
   },
   {
-    name: "Firebase",
+    name: "Express.js",
     category: "backend",
-    icon: SiFirebase,
-    color: "text-amber-500",
-    bg: "bg-amber-50 border-amber-100",
-    level: "Comfortable",
-    description: "Authentication, Firestore database, Hosting",
+    icon: HiOutlineServer,
+    color: "text-gray-800",
+    bg: "bg-gray-100 border-gray-200",
+    level: "Proficient",
+    description: "RESTful APIs, Routing, Middleware, Request/Response Lifecycle",
+  },
+  {
+    name: "REST APIs",
+    category: "backend",
+    icon: HiOutlineCode,
+    color: "text-blue-600",
+    bg: "bg-blue-50 border-blue-100",
+    level: "Advanced",
+    description: "API Integration, Request/Response Handling, Error Boundaries, JSON",
+  },
+  {
+    name: "MongoDB",
+    category: "backend",
+    icon: SiMongodb,
+    color: "text-emerald-500",
+    bg: "bg-emerald-50 border-emerald-100",
+    level: "Proficient",
+    description: "CRUD Operations, Collections, Documents, Query Filters",
+  },
+  {
+    name: "Mongoose ODM",
+    category: "backend",
+    icon: SiMongoose,
+    color: "text-red-600",
+    bg: "bg-red-50 border-red-100",
+    level: "Proficient",
+    description: "Schema Design, Data Models, Validation, MongoDB Integration",
+  },
+  {
+    name: "Better Auth",
+    category: "backend",
+    icon: HiOutlineShieldCheck,
+    color: "text-indigo-600",
+    bg: "bg-indigo-50 border-indigo-100",
+    level: "Proficient",
+    description: "Sign-Up, Sign-In, Session Management, Protected Routes, Profiles",
   },
 
   // Tools & Deployment
@@ -129,8 +173,8 @@ const skillsData = [
     icon: FaGitAlt,
     color: "text-orange-600",
     bg: "bg-orange-50 border-orange-100",
-    level: "Proficient",
-    description: "Branching, Pull Requests, Merge conflicts, Versioning",
+    level: "Advanced",
+    description: "Version Control, Branching, Repository Management, Collaboration",
   },
   {
     name: "Vite",
@@ -138,8 +182,17 @@ const skillsData = [
     icon: SiVite,
     color: "text-purple-600",
     bg: "bg-purple-50 border-purple-100",
-    level: "Proficient",
-    description: "Fast HMR, Bundling, Config plugins, Build optimization",
+    level: "Advanced",
+    description: "Fast Development Server, Hot Module Replacement (HMR), Build Bundler",
+  },
+  {
+    name: "Vercel & Netlify",
+    category: "tools",
+    icon: SiVercel,
+    color: "text-gray-900",
+    bg: "bg-gray-100 border-gray-200",
+    level: "Advanced",
+    description: "Application Deployment, Environment Variables, Production Builds",
   },
   {
     name: "Postman",
@@ -147,35 +200,26 @@ const skillsData = [
     icon: SiPostman,
     color: "text-orange-500",
     bg: "bg-orange-50 border-orange-100",
-    level: "Comfortable",
-    description: "API testing, Request payloads, Header inspection",
-  },
-  {
-    name: "Vercel & Netlify",
-    category: "tools",
-    icon: SiVercel,
-    color: "text-gray-900",
-    bg: "bg-gray-50 border-gray-200",
     level: "Proficient",
-    description: "CI/CD auto-deployments, Custom domains, Environment variables",
+    description: "REST API Testing, Request Payloads, Headers, API Debugging",
   },
   {
-    name: "Chrome DevTools",
+    name: "AI-Assisted Development",
+    category: "tools",
+    icon: FaRobot,
+    color: "text-emerald-600",
+    bg: "bg-emerald-50 border-emerald-100",
+    level: "Advanced",
+    description: "AI-Powered Coding, Debugging, Problem-Solving, Workflow Optimization",
+  },
+  {
+    name: "Chrome DevTools & npm",
     category: "tools",
     icon: FaChrome,
     color: "text-blue-500",
     bg: "bg-blue-50 border-blue-100",
-    level: "Proficient",
-    description: "DOM Inspection, Network tab, Console debugging, Performance",
-  },
-  {
-    name: "npm & Ecosystem",
-    category: "tools",
-    icon: FaNpm,
-    color: "text-red-500",
-    bg: "bg-red-50 border-red-100",
-    level: "Proficient",
-    description: "Package management, Scripts, Dependency resolution",
+    level: "Advanced",
+    description: "DOM Inspection, Console Debugging, Network Analysis, Dependencies",
   },
 ];
 
@@ -201,7 +245,7 @@ const Skills = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          The technologies, libraries, and developer tools I leverage to build fast, responsive, and delightful web applications.
+          The full-stack technologies, databases, modern authentication, and AI development workflows I leverage to build reliable products.
         </p>
       </div>
 
@@ -243,9 +287,7 @@ const Skills = () => {
                     className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full border ${
                       skill.level === "Advanced"
                         ? "bg-emerald-50 text-emerald-700 border-emerald-200"
-                        : skill.level === "Proficient"
-                        ? "bg-blue-50 text-blue-700 border-blue-200"
-                        : "bg-purple-50 text-purple-700 border-purple-200"
+                        : "bg-blue-50 text-blue-700 border-blue-200"
                     }`}
                   >
                     {skill.level}
@@ -262,11 +304,11 @@ const Skills = () => {
               </div>
 
               {/* Progress Indicator */}
-              <div className="mt-4 pt-3 border-t border-gray-100 flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <div className="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
                 <span className="text-[11px] text-gray-400 font-medium capitalize">
                   {skill.category}
                 </span>
+                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               </div>
             </div>
           );

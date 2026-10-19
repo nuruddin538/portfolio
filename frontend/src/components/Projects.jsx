@@ -13,7 +13,7 @@ const Projects = () => {
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
           <HiOutlineSparkles className="text-blue-600 text-sm" />
-          <span>My Portfolio Projects</span>
+          <span>Featured Applications</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
@@ -21,7 +21,7 @@ const Projects = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          Explore real-world web applications I built to solve practical problems, demonstrating clean code, modern UI/UX design, and responsive frontend architectures.
+          Explore production-grade full-stack Next.js and React applications solving practical challenges with type-safety, authentication, and modern UI/UX design.
         </p>
       </div>
 
@@ -33,7 +33,7 @@ const Projects = () => {
             className="group bg-white rounded-2xl border border-gray-200/90 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all duration-300 flex flex-col overflow-hidden"
           >
             {/* Card Thumbnail / Image Container */}
-            <div className="relative aspect-video w-full overflow-hidden bg-gray-100 border-b border-gray-100">
+            <div className="relative aspect-video w-full overflow-hidden bg-gray-900 border-b border-gray-100">
               <img
                 src={project.image}
                 alt={project.title}
@@ -50,7 +50,7 @@ const Projects = () => {
             {/* Card Body */}
             <div className="p-6 flex flex-col flex-grow justify-between space-y-4">
               <div className="space-y-2.5">
-                <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-1">
                   {project.title}
                 </h3>
 
@@ -82,7 +82,7 @@ const Projects = () => {
                   to={`/projects/${project.id}`}
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:text-blue-800 transition"
                 >
-                  <span>Details &amp; Tech</span>
+                  <span>Case Study</span>
                   <HiArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
                 </Link>
 
@@ -121,14 +121,14 @@ const Projects = () => {
       {/* Bottom Github Note */}
       <div className="mt-12 text-center">
         <p className="text-sm text-gray-500">
-          Want to see more code and experiments? Check out my{" "}
+          Want to explore more source code, commits, and experiments? Visit my{" "}
           <a
-            href="https://github.com/"
+            href="https://github.com/nuruddin538"
             target="_blank"
             rel="noreferrer"
             className="font-semibold text-blue-600 hover:underline inline-flex items-center gap-1"
           >
-            GitHub profile <HiExternalLink />
+            GitHub profile (@nuruddin538) <HiExternalLink />
           </a>
         </p>
       </div>
