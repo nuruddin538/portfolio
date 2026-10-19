@@ -52,7 +52,7 @@ const Resume = () => {
 
       {/* Main Resume Sheet */}
       <main className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200/90 p-8 sm:p-12 print:shadow-none print:border-none print:p-0 print:rounded-none">
-        
+
         {/* ================= HEADER SECTION ================= */}
         <header className="border-b border-slate-200 pb-6 mb-6">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
@@ -117,7 +117,7 @@ const Resume = () => {
               <span>Facebook</span>
             </a>
             <a
-              href="https://adorable-starship-b29618.netlify.app/"
+              href="https://developer-portfolio500.netlify.app/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 hover:text-blue-600 transition"
