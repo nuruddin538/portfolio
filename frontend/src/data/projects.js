@@ -88,58 +88,7 @@ const projects = [
       "Custom routine builder with built-in rest interval audio cues"
     ],
   },
-  {
-    id: 4,
-    title: "Plant Discovery Application",
-    image: plantImg,
-    category: "REST API Web Application",
-    technologies: [
-      "React.js",
-      "JavaScript (ES6+)",
-      "REST APIs",
-      "CSS3"
-    ],
-    description:
-      "A React-based application for exploring plant information and browsing categories using external API data, with rich botanical details, responsive cards, and search filtering.",
-    live: "https://adorable-starship-b29618.netlify.app/",
-    github: "https://github.com/nuruddin538",
-    challenges: [
-      "Asynchronous REST API data fetching with robust loading and error state management",
-      "Category-based browsing and dynamic query filtering across plant species",
-      "Building clean, reusable UI components with responsive CSS layouts"
-    ],
-    future: [
-      "Plant care reminder calendar with watering and sunlight notifications",
-      "Image recognition integration for instant plant species identification",
-      "User plant diary for tracking growth milestones"
-    ],
-  },
-  {
-    id: 5,
-    title: "BPL Dream — Cricket Player Application",
-    image: bplImg,
-    category: "Sports & Entertainment Web App",
-    technologies: [
-      "React.js",
-      "JavaScript (ES6+)",
-      "CSS3",
-      "JSON"
-    ],
-    description:
-      "A cricket-themed web application featuring Bangladesh Premier League player profiles, fixtures, and organized tournament navigation rendered from structured JSON data.",
-    live: "https://adorable-starship-b29618.netlify.app/",
-    github: "https://github.com/nuruddin538",
-    challenges: [
-      "Structured JSON data rendering across home, fixtures, players, and schedule sections",
-      "Component-based UI development with responsive mobile navigation",
-      "Team roster filtering and individual player stat comparisons"
-    ],
-    future: [
-      "Live match score API integration with real-time ball-by-ball updates",
-      "Interactive fantasy dream team builder with point calculation rules",
-      "Match schedule export to Google Calendar"
-    ],
-  },
+
 ];
 
 export default projects;

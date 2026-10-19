@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { HiMenuAlt3, HiX, HiDocumentText } from "react-icons/hi";
+import { HiMenuAlt3, HiX, HiDocumentText, HiDownload } from "react-icons/hi";
 
 const navLinks = [
   { name: "Home", id: "home" },
@@ -127,15 +127,16 @@ const Navbar = () => {
           })}
         </ul>
 
-        {/* Desktop Right CTA (Resume Button) */}
+        {/* Desktop Right CTA (Download Resume Button) */}
         <div className="hidden md:flex items-center gap-3">
-          <Link
-            to="/resume"
+          <a
+            href="/resume.pdf"
+            download="Nur_Uddin_Resume.pdf"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
           >
-            <HiDocumentText className="text-lg" />
-            <span>Resume / CV</span>
-          </Link>
+            <HiDownload className="text-lg" />
+            <span>Download Resume</span>
+          </a>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -194,16 +195,17 @@ const Navbar = () => {
             );
           })}
 
-          {/* Mobile Resume Button */}
+          {/* Mobile Download Resume Button */}
           <li className="pt-3 border-t border-gray-100">
-            <Link
-              to="/resume"
+            <a
+              href="/resume.pdf"
+              download="Nur_Uddin_Resume.pdf"
               onClick={closeMenu}
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-xl font-semibold shadow-md hover:from-blue-700 hover:to-indigo-700 transition"
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-xl font-semibold shadow-md hover:from-blue-700 hover:to-indigo-700 transition cursor-pointer"
             >
-              <HiDocumentText className="text-xl" />
-              <span>View Full Resume</span>
-            </Link>
+              <HiDownload className="text-xl" />
+              <span>Download Resume</span>
+            </a>
           </li>
         </ul>
       </div>

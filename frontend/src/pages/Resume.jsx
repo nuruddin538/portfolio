@@ -3,6 +3,7 @@ import projects from "../data/projects";
 import {
   HiArrowLeft,
   HiPrinter,
+  HiDownload,
   HiMail,
   HiPhone,
   HiLocationMarker,
@@ -32,11 +33,19 @@ const Resume = () => {
             Junior Full-Stack Developer • Available Immediately
           </span>
 
-          <button
-            onClick={handlePrint}
+          <a
+            href="/resume.pdf"
+            download="Nur_Uddin_Resume.pdf"
             className="inline-flex items-center gap-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 px-5 py-2.5 rounded-xl shadow-md shadow-blue-500/20 hover:shadow-lg transition cursor-pointer"
           >
-            <HiPrinter className="text-base" /> Print / Save as PDF
+            <HiDownload className="text-base" /> Download PDF
+          </a>
+
+          <button
+            onClick={handlePrint}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 px-4 py-2.5 rounded-xl shadow-xs transition cursor-pointer"
+          >
+            <HiPrinter className="text-base" /> Print
           </button>
         </div>
       </div>
