@@ -12,7 +12,7 @@ I am a passionate and self-driven developer focused on building modern, responsi
 - 🎯 **Career Goal:** Junior / Entry-Level Full-Stack Developer
 - 🚀 **Currently Focused On:** Modern web development, scalable architecture, and AI-driven engineering
 - 📧 **Email:** [nuruddinnur538@gmail.com](mailto:nuruddinnur538@gmail.com)
-- 💼 **Portfolio:** [Visit My Portfolio](https://adorable-starship-b29618.netlify.app/)
+- 💼 **Portfolio:** [Visit My Portfolio](https://symphonious-bubblegum-be4db9.netlify.app/)
 
 ---
 
