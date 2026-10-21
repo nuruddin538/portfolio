@@ -150,7 +150,7 @@ const Contact = () => {
 
                 {/* Live Portfolio */}
                 <a
-                  href="https://adorable-starship-b29618.netlify.app/"
+                  href="https://glistening-yeot-3d11f9.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-start gap-4 p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 hover:bg-blue-50/70 dark:hover:bg-gray-800 border border-gray-200/80 dark:border-gray-800 hover:border-blue-400 dark:hover:border-cyan-400 transition-all duration-300 group hover:shadow-md hover:shadow-blue-500/10"
