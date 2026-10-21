@@ -1,8 +1,6 @@
 import bazardorImg from "../assets/projects/bazardor.svg";
 import devstackImg from "../assets/projects/devstack.svg";
 import fitlogImg from "../assets/projects/fitlog.svg";
-import plantImg from "../assets/projects/plantdiscovery.svg";
-import bplImg from "../assets/projects/bpldream.svg";
 
 const projects = [
   {
